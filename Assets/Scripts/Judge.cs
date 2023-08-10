@@ -13,7 +13,7 @@ public class Judge : MonoBehaviour
         {
             if (notesManager.LaneNum[0] == 0)//押されたボタンはレーンの番号とあっているか？
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                Judgement(GetABS(Time.time - (notesManager.NotesTime[0]+GManager.instance.StartTime)));
                 /*
                 本来ノーツをたたく場所と実際にたたいた場所がどれくらいずれているかを求め、
                 その絶対値をJudgement関数に送る
@@ -24,29 +24,31 @@ public class Judge : MonoBehaviour
         {
             if (notesManager.LaneNum[0] == 1)
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
             }
         }
         if (Input.GetKeyDown(KeyCode.J))
         {
             if (notesManager.LaneNum[0] == 2)
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
             }
         }
         if (Input.GetKeyDown(KeyCode.K))
         {
             if (notesManager.LaneNum[0] == 3)
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
             }
         }
 
-        if (Time.time > notesManager.NotesTime[0] + 0.2f)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
+        if (Time.time > notesManager.NotesTime[0] + 0.2f + GManager.instance.StartTime)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
         {
             message(3);
             deleteData();
             Debug.Log("Miss");
+            GManager.instance.combo = 0;
+            GManager.instance.miss++;
             //ミス
         }
     }
@@ -55,6 +57,8 @@ public class Judge : MonoBehaviour
         if (timeLag <= 0.10)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.1秒以下だったら
         {
             Debug.Log("Perfect");
+            GManager.instance.perfect++;
+            GManager.instance.combo++;
             message(0);
             deleteData();
         }
@@ -63,6 +67,8 @@ public class Judge : MonoBehaviour
             if (timeLag <= 0.15)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.15秒以下だったら
             {
                 Debug.Log("Great");
+                GManager.instance.great++;
+                GManager.instance.combo++;
                 message(1);
                 deleteData();
             }
@@ -71,6 +77,8 @@ public class Judge : MonoBehaviour
                 if (timeLag <= 0.20)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.2秒以下だったら
                 {
                     Debug.Log("Bad");
+                    GManager.instance.bad++;
+                    GManager.instance.combo = 0;
                     message(2);
                     deleteData();
                 }
