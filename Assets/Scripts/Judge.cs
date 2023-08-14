@@ -9,48 +9,52 @@ public class Judge : MonoBehaviour
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))//〇キーが押されたとき
+        if (GManager.instance.Start)
         {
-            if (notesManager.LaneNum[0] == 0)//押されたボタンはレーンの番号とあっているか？
+            if (Input.GetKeyDown(KeyCode.D))//〇キーが押されたとき
             {
-                Judgement(GetABS(Time.time - (notesManager.NotesTime[0]+GManager.instance.StartTime)));
-                /*
-                本来ノーツをたたく場所と実際にたたいた場所がどれくらいずれているかを求め、
-                その絶対値をJudgement関数に送る
-                */
+                if (notesManager.LaneNum[0] == 0)//押されたボタンはレーンの番号とあっているか？
+                {
+                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                    /*
+                    本来ノーツをたたく場所と実際にたたいた場所がどれくらいずれているかを求め、
+                    その絶対値をJudgement関数に送る
+                    */
+                }
             }
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            if (notesManager.LaneNum[0] == 1)
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                if (notesManager.LaneNum[0] == 1)
+                {
+                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                }
             }
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            if (notesManager.LaneNum[0] == 2)
+            if (Input.GetKeyDown(KeyCode.J))
             {
-                Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                if (notesManager.LaneNum[0] == 2)
+                {
+                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                }
             }
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            if (notesManager.LaneNum[0] == 3)
+            if (Input.GetKeyDown(KeyCode.K))
             {
-                Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                if (notesManager.LaneNum[0] == 3)
+                {
+                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                }
             }
-        }
 
-        if (Time.time > notesManager.NotesTime[0] + 0.2f + GManager.instance.StartTime)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
-        {
-            message(3);
-            deleteData();
-            Debug.Log("Miss");
-            GManager.instance.combo = 0;
-            GManager.instance.miss++;
-            //ミス
+            if (Time.time > notesManager.NotesTime[0] + 0.2f + GManager.instance.StartTime)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
+            {
+                message(3);
+                deleteData();
+                Debug.Log("Miss");
+                GManager.instance.combo = 0;
+                GManager.instance.miss++;
+                //ミス
+            }
         }
+        
     }
     void Judgement(float timeLag)
     {

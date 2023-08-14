@@ -14,7 +14,6 @@ public class NoteLight : MonoBehaviour
     }
     void Update()
     {
-
         if (!(rend.material.color.a <= 0))
         {
             rend.material.color = new Color(rend.material.color.r, rend.material.color.r, rend.material.color.r, alfa);
@@ -48,7 +47,7 @@ public class NoteLight : MonoBehaviour
                 colorChange();
             }
         }
-        alfa -= Speed * Time.deltaTime;
+        alfa -= Speed * Time.deltaTime;   
     }
 
     void colorChange()
