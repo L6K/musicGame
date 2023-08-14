@@ -88,6 +88,7 @@ public class Judge : MonoBehaviour
                 }
             }
         }
+        
     }
     float GetABS(float num)//ˆø”‚Ìâ‘Î’l‚ğ•Ô‚·ŠÖ”
     {

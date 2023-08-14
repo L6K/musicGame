@@ -11,13 +11,15 @@ public class Combo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        comboText.text = GManager.instance.combo.ToString();
+        comboText.alpha = 30;
+        comboText.text = $"<color=red><alpha=#88>{GManager.instance.combo}</color>";
     }
     
 
     // Update is called once per frame
     void Update()
     {
-        comboText.text = GManager.instance.combo.ToString();
+        comboText.text = $"<color=red><alpha=#88>{GManager.instance.combo}</color>";
+        Debug.Log("Combo Increased: " + GManager.instance.combo);
     }
 }
