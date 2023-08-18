@@ -63,6 +63,7 @@ public class Judge : MonoBehaviour
             Debug.Log("Perfect");
             GManager.instance.perfect++;
             GManager.instance.combo++;
+            GManager.instance.score += 3;
             message(0);
             deleteData();
         }
@@ -73,6 +74,7 @@ public class Judge : MonoBehaviour
                 Debug.Log("Great");
                 GManager.instance.great++;
                 GManager.instance.combo++;
+                GManager.instance.score += 2;
                 message(1);
                 deleteData();
             }
@@ -80,9 +82,11 @@ public class Judge : MonoBehaviour
             {
                 if (timeLag <= 0.20)//–{—ˆƒm[ƒc‚ð‚½‚½‚­‚×‚«ŽžŠÔ‚ÆŽÀÛ‚Éƒm[ƒc‚ð‚½‚½‚¢‚½ŽžŠÔ‚ÌŒë·‚ª0.2•bˆÈ‰º‚¾‚Á‚½‚ç
                 {
-                    Debug.Log("Bad");
+                    Debug.Log("Good");
                     GManager.instance.bad++;
-                    GManager.instance.combo = 0;
+                    GManager.instance.combo++;
+                    GManager.instance.score++;
+
                     message(2);
                     deleteData();
                 }
