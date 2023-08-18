@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8A403B6E-7256-83DC-3398-16378C4504CE}</ProjectGuid>
+    <ProjectGuid>{8561B81D-54EE-0DD0-D13F-887876C84599}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,57 +56,114 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\Scripts\GManager.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\02_FocusOn\ScrollView.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\Scripts\Combo.cs" />
     <Compile Include="Assets\Scripts\NotesManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Context.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\05_Voronoi\Context.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\01_Basic\ItemData.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\09_LoadTexture\TextureLoader.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\Scripts\MusicManager.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\02_FocusOn\Cell.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ScrollView.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Window.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\08_GridView\Alignment.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Tab.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\08_GridView\Example08.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\07_ScrollRect\Example07.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\Scripts\Judge.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\05_Voronoi\ScrollView.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\Context.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ItemData.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\Cell.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\05_Voronoi\Background.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Cell.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\02_FocusOn\ItemData.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\08_GridView\ItemData.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\07_ScrollRect\ScrollView.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Scripts\GManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Context.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\Example04.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\ItemData.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\09_LoadTexture\Cell.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\02_FocusOn\Example02.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Example03.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\05_Voronoi\Cell.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\08_GridView\Context.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\05_Voronoi\Example05.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\ScrollView.cs" />
+    <Compile Include="Assets\Scripts\Combo.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\Background.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scripts\MusicManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\Common\ScenesDropdown.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\01_Basic\ScrollView.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\09_LoadTexture\Example09.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Example06.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\09_LoadTexture\ScrollView.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\05_Voronoi\ItemData.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\ItemData.cs" />
+    <Compile Include="Assets\Scripts\Judge.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\08_GridView\GridView.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\01_Basic\Example01.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\08_GridView\Cell.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\09_LoadTexture\ItemData.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\07_ScrollRect\Cell.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\07_ScrollRect\Context.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\01_Basic\Cell.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\07_ScrollRect\Alignment.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\07_ScrollRect\ItemData.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\ScrollView.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\SlideScreenTransition.cs" />
     <Compile Include="Assets\Scripts\NoteLight.cs" />
     <Compile Include="Assets\Scripts\Notes.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\02_FocusOn\Context.cs" />
+    <Compile Include="Assets\Scripts\SelectMusic\MusicScrollView.cs" />
+    <Compile Include="Assets\Scripts\SelectMusic\MusicCell.cs" />
+    <Compile Include="Assets\Scripts\SelectMusic\TestMusicViewer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\FancyScrollView-master\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.hlsl" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -114,9 +171,12 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\05_Voronoi\Voronoi.hlsl" />
+     <None Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\Common\Common.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\05_Voronoi\Voronoi.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -761,6 +821,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="FancyScrollView.Editor.csproj">
+      <Project>{C4325DFF-D4B0-0F33-595E-372232F84B3D}</Project>
+      <Name>FancyScrollView.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FancyScrollView.csproj">
+      <Project>{5E34A604-F8FC-B9D9-5392-0430FC8BEDCC}</Project>
+      <Name>FancyScrollView</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
