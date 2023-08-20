@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Judge : MonoBehaviour
@@ -15,48 +17,72 @@ public class Judge : MonoBehaviour
             {
                 if (notesManager.LaneNum[0] == 0)//押されたボタンはレーンの番号とあっているか？
                 {
-                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
-                    /*
-                    本来ノーツをたたく場所と実際にたたいた場所がどれくらいずれているかを求め、
-                    その絶対値をJudgement関数に送る
-                    */
+                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)), 0);
+                }
+                else
+                {
+                    if (notesManager.LaneNum[1] == 0)
+                    {
+                        Judgement(GetABS(Time.time - (notesManager.NotesTime[1] + GManager.instance.StartTime)), 1);
+                    }
                 }
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
                 if (notesManager.LaneNum[0] == 1)
                 {
-                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)), 0);
+                }
+                else
+                {
+                    if (notesManager.LaneNum[1] == 1)
+                    {
+                        Judgement(GetABS(Time.time - (notesManager.NotesTime[1] + GManager.instance.StartTime)), 1);
+                    }
                 }
             }
             if (Input.GetKeyDown(KeyCode.J))
             {
                 if (notesManager.LaneNum[0] == 2)
                 {
-                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)), 0);
+                }
+                else
+                {
+                    if (notesManager.LaneNum[1] == 2)
+                    {
+                        Judgement(GetABS(Time.time - (notesManager.NotesTime[1] + GManager.instance.StartTime)), 1);
+                    }
                 }
             }
             if (Input.GetKeyDown(KeyCode.K))
             {
                 if (notesManager.LaneNum[0] == 3)
                 {
-                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)));
+                    Judgement(GetABS(Time.time - (notesManager.NotesTime[0] + GManager.instance.StartTime)), 0);
+                }
+                else
+                {
+                    if (notesManager.LaneNum[1] == 3)
+                    {
+                        Judgement(GetABS(Time.time - (notesManager.NotesTime[1] + GManager.instance.StartTime)), 1);
+                    }
                 }
             }
 
             if (Time.time > notesManager.NotesTime[0] + 0.2f + GManager.instance.StartTime)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
             {
                 message(3);
-                deleteData();
+                deleteData(0);
                 Debug.Log("Miss");
-                GManager.instance.combo = 0;
                 GManager.instance.miss++;
+                GManager.instance.combo = 0;
                 //ミス
             }
         }
         
     }
-    void Judgement(float timeLag)
+    void Judgement(float timeLag, int numOffset)
     {
         if (timeLag <= 0.10)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.1秒以下だったら
         {
@@ -65,7 +91,7 @@ public class Judge : MonoBehaviour
             GManager.instance.combo++;
             GManager.instance.score += 3;
             message(0);
-            deleteData();
+            deleteData(numOffset);
         }
         else
         {
@@ -76,7 +102,7 @@ public class Judge : MonoBehaviour
                 GManager.instance.combo++;
                 GManager.instance.score += 2;
                 message(1);
-                deleteData();
+                deleteData(numOffset);
             }
             else
             {
@@ -88,7 +114,7 @@ public class Judge : MonoBehaviour
                     GManager.instance.score++;
 
                     message(2);
-                    deleteData();
+                    deleteData(numOffset);
                 }
             }
         }
@@ -105,16 +131,15 @@ public class Judge : MonoBehaviour
             return -num;
         }
     }
-    void deleteData()//すでにたたいたノーツを削除する関数
+    void deleteData(int numOffset)//すでにたたいたノーツを削除する関数
     {
-        notesManager.NotesTime.RemoveAt(0);
-        notesManager.LaneNum.RemoveAt(0);
-        notesManager.NoteType.RemoveAt(0);
+        notesManager.NotesTime.RemoveAt(numOffset);
+        notesManager.LaneNum.RemoveAt(numOffset);
+        notesManager.NoteType.RemoveAt(numOffset);
     }
 
     void message(int judge)//判定を表示する
     {
         Instantiate(MessageObj[judge], new Vector3(notesManager.LaneNum[0] - 1.5f, 0.76f, 0.15f), Quaternion.Euler(45, 0, 0));
-        //Instantiate(MessageObj[judge], new Vector3(0f, 0.76f, 0.15f), Quaternion.Euler(45, 0, 0));
     }
 }

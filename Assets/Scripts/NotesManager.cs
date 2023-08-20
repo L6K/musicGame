@@ -38,7 +38,7 @@ public class NotesManager : MonoBehaviour
     void OnEnable()
     {
         noteNum = 0;
-        songName = "shiningStar";
+        songName = SceneChange.musicName;
         Load(songName);
     }
 

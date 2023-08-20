@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8561B81D-54EE-0DD0-D13F-887876C84599}</ProjectGuid>
+    <ProjectGuid>{F193A44A-8770-B98B-31D8-E8A5579F15FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,6 +67,7 @@
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\01_Basic\ItemData.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\09_LoadTexture\TextureLoader.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\Scripts\SelectMusic\MusicScrollView.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\02_FocusOn\Cell.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ScrollView.cs" />
@@ -98,11 +99,13 @@
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\07_ScrollRect\ScrollView.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\GManager.cs" />
+    <Compile Include="Assets\Scripts\SelectMusic\SelectImage.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Context.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\Example04.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\ItemData.cs" />
+    <Compile Include="Assets\Scripts\SelectMusic\MusicCell.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\09_LoadTexture\Cell.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\02_FocusOn\Example02.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Example03.cs" />
@@ -114,6 +117,7 @@
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\ScrollView.cs" />
     <Compile Include="Assets\Scripts\Combo.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\04_Metaball\Background.cs" />
+    <Compile Include="Assets\Scripts\SelectMusic\TestMusicViewer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -148,9 +152,8 @@
     <Compile Include="Assets\Scripts\Notes.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\FancyScrollView-master\Assets\FancyScrollView\Examples\Sources\02_FocusOn\Context.cs" />
-    <Compile Include="Assets\Scripts\SelectMusic\MusicScrollView.cs" />
-    <Compile Include="Assets\Scripts\SelectMusic\MusicCell.cs" />
-    <Compile Include="Assets\Scripts\SelectMusic\TestMusicViewer.cs" />
+    <Compile Include="Assets\Scripts\SelectMusic\SceneChange.cs" />
+    <Compile Include="Assets\Scripts\WhenEscPushed.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -419,12 +422,6 @@
     </Reference>
     <Reference Include="Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.5.2\Runtime\VisualScripting.Flow\Dependencies\NCalc\Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.0f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.0f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.0f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -822,11 +819,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FancyScrollView.Editor.csproj">
-      <Project>{C4325DFF-D4B0-0F33-595E-372232F84B3D}</Project>
+      <Project>{F880D5D0-1BFA-291A-E94B-47DE29BAD39C}</Project>
       <Name>FancyScrollView.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="FancyScrollView.csproj">
-      <Project>{5E34A604-F8FC-B9D9-5392-0430FC8BEDCC}</Project>
+      <Project>{BB53755C-7300-7E19-5497-DBFE925B0A32}</Project>
       <Name>FancyScrollView</Name>
     </ProjectReference>
   </ItemGroup>
